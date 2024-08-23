@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Secure App - Index</title>
+    <title>App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .google-login-btn {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .google-login-btn:hover {
+            background-color: #357ae8;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to the Secure App</h1>
-<p><a href="/oauth2/authorization/google">Login with Google</a></p>
+<h1>Welcome Home page</h1>
+<p><a href="/oauth2/authorization/google" class="google-login-btn">Login with Google</a></p>
 </body>
 </html>
